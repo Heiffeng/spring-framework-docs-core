@@ -17,3 +17,7 @@ Code is cleaner with the DI principle, and decoupling is more effective when obj
 DI exists in two major variants: Constructor-based dependency injection and Setter-based dependency injection.
 
 DI 主要存在两种形式：构造器注入和Setter方法注入。
+
+#### Constructor-based Dependency Injection
+
+Constructor-based DI is accomplished by the container invoking a constructor with a number of arguments, each representing a dependency. Calling a static factory method with specific arguments to construct the bean is nearly equivalent, and this discussion treats arguments to a constructor and to a static factory method similarly. The following example shows a class that can only be dependency-injected with constructor injection:
